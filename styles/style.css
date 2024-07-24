@@ -37,6 +37,7 @@ body {
   border: none;
   color: var(--text-primary-color);
   font-weight: 600;
+  cursor: pointer;
 }
 
 .btn_secondary {
@@ -46,6 +47,7 @@ body {
   border: 1px solid #ffffff;
   color: var(--text-primary-color);
   font-weight: 600;
+  cursor: pointer;
 }
 
 /* header start */
@@ -222,17 +224,57 @@ body {
 }
 /* habit style end */
 
+/* extra run mile style start */
+.extra_mile_container {
+  display: flex;
+  gap: 180px;
+  align-items: center;
+  border-radius: 18px;
+  background: rgb(34, 34, 34);
+  margin-bottom: 80px;
+  padding: 0px 30px;
+}
+.extra_mile_content {
+  max-width: 445px;
+}
+.extra_mile_content h3 {
+  color: var(--text-primary-color);
+  font-size: 3rem;
+  font-weight: 900;
+}
+.extra_mile_content p {
+  color: var(--text-secondary-color);
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-top: 14px;
+  margin-bottom: 25px;
+}
+.extra_mile_image {
+  width: 365px;
+  height: 312px;
+}
+.extra_mile_image img {
+  width: 100%;
+  border-radius: 18px;
+  margin-top: 40px;
+}
+/* extra run mile style end */
+
 /* responsive design start */
 
 /* for mobile device */
 @media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
   .nav_item {
     display: none;
   }
   .menu_icon {
     display: block;
   }
-  .banner_container {
+  .banner_container,
+  .extra_mile_container {
     flex-direction: column;
   }
   .habit_type_container {
@@ -240,7 +282,8 @@ body {
     justify-items: center;
   }
   .banner_content,
-  .habit_content {
+  .habit_content,
+  .extra_mile_content {
     width: 100%;
   }
   .btn_primary {
@@ -265,8 +308,17 @@ body {
     width: 145px;
     padding: 10px;
   }
-  .habit_content h2 {
-  font-size: 2rem;
-}
+  .extra_mile_container {
+    height: 530px;
+    gap: 20px;
+  }
+  .habit_content h2,
+  .extra_mile_content h3 {
+    font-size: 2rem;
+  }
+  .extra_mile_image {
+    width: 250px;
+    height: 150px;
+  }
 }
 /* responsive design end */
