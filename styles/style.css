@@ -338,7 +338,6 @@ input,
   border: none;
 }
 
-
 input::placeholder {
   color: var(--text-secondary-color);
 }
@@ -364,6 +363,50 @@ input[type="text"] {
 
 /* bmi style end */
 
+.team_content {
+  width: 650px;
+  margin: 0 auto;
+  text-align: center;
+}
+.team_content h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--text-primary-color);
+  margin-bottom: 10px;
+}
+.team_content p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--text-secondary-color);
+  margin-bottom: 50px;
+}
+
+.team_member_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  border-radius: 18px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding-top: 40px;
+  margin-bottom: 80px;
+}
+.team_image img {
+  width: 320px;
+  height: 250px;
+  border-radius: 18px;
+}
+.team_profile {
+  position: relative;
+  bottom: 50px;
+  left: 20px;
+}
+.team_profile p{
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--text-secondary-color);
+}
+/* our team style end */
+
 /* responsive design start */
 
 /* for mobile device */
@@ -382,7 +425,8 @@ input[type="text"] {
   .bmi_container {
     flex-direction: column;
   }
-  .habit_type_container {
+  .habit_type_container,
+  .team_member_container {
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
   }
@@ -391,7 +435,8 @@ input[type="text"] {
   .extra_mile_content,
   .bmi_header_content,
   .bmi_calculate_container,
-  .bmi_table {
+  .bmi_table,
+  .team_content {
     width: 100%;
   }
   .btn_primary {
@@ -437,8 +482,17 @@ input[type="text"] {
     padding: 10px;
     gap: 50px;
   }
-  .bmi_header_content{
+  .bmi_header_content {
     padding: 0px 20px;
+  }
+  .team_image img{
+    width: 100%;
+  }
+  .team_member_container{
+    padding: 20px 15px 0px 15px;
+  }
+  .team_content h2{
+    font-size: 2rem;
   }
 }
 /* responsive design end */
