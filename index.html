@@ -73,10 +73,10 @@
     </header>
     <!-- header end -->
     <!-- main start -->
-    <main class="container">
+    <main>
       <!-- habit section start -->
       <section>
-        <div class="habit_container">
+        <div class="habit_container container">
           <div class="habit_content">
             <h2>Change Your Habits</h2>
             <p>
@@ -113,7 +113,7 @@
 
       <!-- run extra mile section start -->
       <section>
-        <div class="extra_mile_container">
+        <div class="extra_mile_container container">
           <div class="extra_mile_content">
             <h3>Run an Extra <br> Mile Easily</h3>
             <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
@@ -125,6 +125,70 @@
         </div>
       </section>
       <!-- run extra mile section end -->
+
+      <!-- bmi calculator section start -->
+       <section>
+        <div class="bmi_header_content">
+          <h2>BMI Calculator</h2>
+          <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+        </div>
+       <div class="bmi">
+         <div class="bmi_container container">
+          <div class="bmi_table">
+            <h3>BMI Calculator Chart</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>BMI</th>
+                  <th>Weight Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Below 18.5</td>
+                  <td>Underweight</td>
+                </tr>
+                <tr>
+                  <td>18.5 - 24.9</td>
+                  <td>Healthy</td>
+                </tr>
+                <tr>
+                  <td>25.0 - 29.9</td>
+                  <td>Overweight</td>
+                </tr>
+                <tr>
+                  <td>30.0 - and Above</td>
+                  <td>Obese</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="bmi_calculate_container">
+            <div class="bmi_calculate_content">
+              <h3>Calculate your BMI</h3>
+              <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
+            </div>
+            <form>
+             <div class="flex">
+               <input type="text"  id="height" placeholder="Height/cm">
+              <input type="text"  id="Weight" placeholder="Weight/kg">
+             </div>
+             <div class="flex">
+               <input type="text"  id="age" placeholder="Age">
+              <select name="" id="sex">
+                <option value="sex">Sex</option>
+              </select>
+             </div>
+              <select name="" id="activity">
+                <option value="activity">Select an activity factor</option>
+              </select>
+              <button class="btn_primary">Calculate</button>
+            </form>
+          </div>
+        </div>
+       </div>
+       </section>
+      <!-- bmi calculator section end -->
     </main>
     <!-- main end -->
 
