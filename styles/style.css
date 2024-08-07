@@ -351,9 +351,11 @@ input[type="text"] {
 #activity {
   width: 100%;
   margin-bottom: 20px;
+  color: var(--text-secondary-color);
 }
 #sex {
   width: 50%;
+  color: var(--text-secondary-color);
 }
 .flex {
   display: flex;
@@ -450,7 +452,7 @@ footer {
 hr{
   border-color:  rgba(255, 255, 255, 0.1);
 }
-.footer_container p{
+.footer_end_content p{
   padding: 30px 0;
   text-align: center;
   color: var(--text-secondary-color);
@@ -516,8 +518,11 @@ hr{
     padding: 10px;
   }
   .extra_mile_container {
-    height: 530px;
+    height: 480px;
     gap: 20px;
+  }
+  .extra_mile_content{
+    padding-top: 10px;
   }
   .habit_content h2,
   .extra_mile_content h3 {
@@ -539,6 +544,9 @@ hr{
   .bmi_header_content {
     padding: 0px 20px;
   }
+  .bmi_header_content h2 {
+  font-size: 2rem;
+  }
   .team_image img {
     width: 100%;
   }
@@ -556,8 +564,9 @@ hr{
   }
   .footer_content p{
     text-align: left;
+    margin-bottom: 15px;
   }
-  .footer_container p{
+  .footer_end_content p{
     font-size: 1rem;
   }
 }
